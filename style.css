@@ -1,0 +1,86 @@
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #525252;
+    color: white;
+    margin-top: 10px;
+    letter-spacing: 2px;
+}
+
+.top {
+    text-align: center;
+}
+.text-inp {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 4px;
+}
+
+.add-btn {
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    text-align: center;
+    border-radius: 4px;
+    transition: .3s;
+}
+.add-btn:hover {
+    background-color: #525252;
+}
+
+.bottom {
+    margin: 10px 25px;
+}
+.li-el {
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: large;
+    display: inline-block;
+    font-family: sans-serif;
+    color: white;
+}
+
+.del-btn {
+    background-color: #525252;
+    border: 0;
+    color: darkred;
+    font-weight: bolder;
+    font-size: large;
+    cursor: pointer;
+    transition: 0.15s;
+}
+
+.del-btn:hover {
+    color: red;
+}
+
+.contact-btn {
+    color: white;
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.contact-btn:hover {
+    text-decoration: underline;
+}
+
+.active {
+    color: rgb(27, 255, 27);
+    text-decoration: line-through;
+}
+
+.note {
+    color: black;
+    font-size: medium;
+    font-weight: bold;
+    text-shadow: 0 4px 4px white;
+}
