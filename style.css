@@ -4,6 +4,7 @@
 }
 
 body {
+    box-sizing: border-box;
     background-color: #525252;
     color: white;
     margin-top: 10px;
@@ -17,19 +18,21 @@ body {
     border: 1px solid white;
     background-color: black;
     color: white;
-    padding: 5px 10px;
     text-align: center;
     border-radius: 4px;
+    height: 30px;
 }
 
 .add-btn {
     border: 1px solid white;
     background-color: black;
     color: white;
-    padding: 5px 10px;
     text-align: center;
     border-radius: 4px;
     transition: .3s;
+    font-size: large;
+    height: 30px;
+    width: 30px;
 }
 .add-btn:hover {
     background-color: #525252;
@@ -48,29 +51,37 @@ body {
 }
 
 .del-btn {
-    background-color: #525252;
+    background-color: #a80000;
     border: 0;
-    color: darkred;
+    color: rgb(0, 0, 0);
     font-weight: bolder;
     font-size: large;
     cursor: pointer;
     transition: 0.15s;
+    padding: 2px 5px;
 }
 
 .del-btn:hover {
-    color: red;
+    background-color: red;
 }
 
 .contact-btn {
     color: white;
-    display: block;
-    margin-top: 10px;
     text-decoration: none;
     font-weight: bold;
     font-family: sans-serif;
+    display: inline-block;
+    transition: 0.5s;
+    padding: 5px 10px;
+    border: 1px solid black;
 }
 .contact-btn:hover {
-    text-decoration: underline;
+    border: 1px solid white;
+    border-radius: 3px;
+}
+.contact-btn:active {
+    transition: 0.10s;
+    transform: translate(5px, 5px);
 }
 
 .active {
@@ -79,8 +90,17 @@ body {
 }
 
 .note {
-    color: black;
+    color: white;
     font-size: medium;
     font-weight: bold;
-    text-shadow: 0 4px 4px white;
+}
+.black {
+    height: 100px;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    text-align: center;
 }

@@ -40,8 +40,12 @@ function del(num) {
     ulEl.removeChild(document.querySelector(`.li${num}`))
     ulEl.removeChild(document.querySelector(`.br${num}`))
   //  ulEl.removeChild(document.querySelector(`.check${num}`))
+    var rem = new Audio('SFX/remove.mp3');
+    rem.play();
 }
 
 function done(val) {
     document.querySelector(`.li${val}`).classList.toggle("active")
+    var done = new Audio('SFX/done.mp3');
+    done.play();
 }
